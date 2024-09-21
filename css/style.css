@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&family=Nunito:wght@200;300;400;500;600;700;800&family=Oxygen:wght@300;400;700&family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Ubuntu:wght@300;400;500;700&display=swap');
+
+body{
+    font-family: 'Nunito', sans-serif;
+    background-color: #f6f6f6;
+    margin: 0;
+}
+
+#main-header
+{
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    height: auto;
+    justify-content: space-evenly;
+    gap: 6rem;
+    position: fixed;
+    top: 0;
+    align-items: baseline;
+    background: #36D1DC; 
+    background: -webkit-linear-gradient(to right, #5B86E5, #36D1DC);
+    background: linear-gradient(to right, #5B86E5, #36D1DC); 
+    z-index: 99;
+    overflow: hidden;
+}
+
+#main-header #logo{
+    position: relative;
+    left: -4%;
+    color: white;
+    font-size: 1.2rem;
+    letter-spacing: 3px;
+}
+
+#logo h1{
+    border-top: 3px solid snow;
+    border-bottom: 3px solid snow;
+}
+
+#main-header #navbar{
+    position: relative;
+    left: -5%;
+    top: 0;
+    bottom: 0;
+}
+
+#navbar ul{
+    display: flex;
+    flex-flow: row wrap;
+    margin: auto;
+    justify-content: space-between;
+    gap: 4rem;
+    list-style: none;
+}
+
+#navbar ul li a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 18px;
+    padding-left: 1rem;
+    transition: ease .3s;
+}
+
+#navbar ul li a:hover{
+    letter-spacing: 3px;
+}
+
+#main-header #btn button{
+    background-color: transparent;
+    border: 0;
+    outline: 3px solid snow;
+    font-size: 18px;
+    font-family: inherit;
+    padding: 0.9rem 2rem;
+    color: snow;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Hero Begins */
+#hero{
+    position: relative;
+    top: 10rem;
+    margin: auto;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+#hero #hero-header{
+    text-align: center;
+    line-height: 1.2rem;
+    width: auto;
+}
+
+#hero-header h1{
+    font-size: 2.5rem;
+    letter-spacing: 3px;
+}
+
+#hero-header h1 .mentor{
+    color: #5B86E5;
+}
+
+#hero-header p{
+    font-size: 20px;
+}
+
+#hero-img img{
+    border-radius: 50%;
+    box-shadow: 0 2px 15px 2px rgba(0, 0, 0, 0.4);
+}
+
+#main-header .hidden-menu{
+    display: block;
+    font-size: 33px;
+    min-height: auto;
+}
+
+#main-header .hidden-menu{
+    display: none;
+}
+
+/* About Section */
+.about-section{
+    display: block;
+    background: #4b4b4b; 
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    top: 15rem;
+    bottom: 0;
+    padding-top: 1rem;
+    column-gap: 5rem;
+    padding-bottom: 4rem;
+}
+
+.about-section .about-header-text{
+    color: white;
+    margin-top: 5rem;
+    text-align: center;
+    line-height: 1.5rem;
+}
+
+.about-header-text h1{
+    font-size: 2rem;
+}
+
+.about-header-text h1 .name{
+    color: #5B86E5;
+    font-size: 2.1rem;
+    letter-spacing: 3px;
+    transition: ease .3s;
+    position: relative;
+    top: 0;
+    cursor: pointer;
+}
+
+.about-header-text h1 .name:hover{
+    color: #f6f6f6;
+    opacity: 1;
+}
+
+.about-header-text p{
+    display: inline-block;
+    justify-content: center;
+    width: 80%;
+    margin-top: -0.5rem;
+}
+
+.about-section .about-main-section{
+    position: relative;
+    top: 3rem;
+    left: 8rem;
+    background-color: #f6f6f6;
+    max-width: 80%;
+    height: 80vh;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 3.5rem;
+    display: flex;
+    flex: 1 1 auto;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    border-radius: 10px;
+}
+
+.about-main-section .container{
+    display: inline-block;
+    justify-content: center;
+    text-align: flex-start;
+    flex-grow: 1;
+    height: auto;
+}
+
+.container .container-head{
+    text-align: center;
+}
+
+.container .container-sub{
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.container-sub .sub-heading{
+    color: #5B86E5;
+    letter-spacing: 2px;
+}
+
+.container .sub-end{
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.sub-end .sub-heading{
+    color: #5B86E5;
+    letter-spacing: 2px;
+}
+
+.sub-end ul{
+    list-style: none;
+    text-align: start;
+    padding: 1.2rem 2.1rem;
+}
+
+.container:nth-child(2){
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+/* Recent Work */
+.work-done{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    top: 20rem;
+}
+
+.work-done .work-text{
+    text-align: center;
+    padding-bottom: 0;
+    line-height: 1.2rem;
+}
+
+.work-text h1{
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.work-done .work-preview{
+    display: flex;
+    flex-flow: row wrap;
+    flex: 1 1 auto;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 4rem;
+}
+
+.work-done .link{
+    position: relative;
+    top: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.link .git-btn{
+    background-color: #5B86E5;
+    color: whitesmoke;
+    padding: 1.2rem 2.5rem;
+    border: 0;
+    font-size: 18px;
+    font-family: inherit;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+
+
+
+
+/* Media Queries */
+@media (max-width: 900px) {
+    #main-header #navbar{
+        display: none;
+    }
+
+    #main-header #btn button{
+        display: none;
+    }
+
+    #main-header #logo{
+        left: -10%;
+    }
+
+    #main-header .hidden-menu{
+        display: inline-block;
+        position: relative;
+        left: 35%;
+    }
+
+    #hero-header h1{
+        font-size: 2.25rem;
+        line-height: 2.5rem;
+    }
+
+    #hero-header p{
+        font-size: 1rem;
+    }
+
+    .about-section .about-main-section{
+        flex-wrap: wrap;
+        width: 60vw;
+        gap: 2.5rem;
+        height: auto;
+        padding-right: 2rem;
+    }
+
+    .container .sub-end ul{
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px){
+    .about-section .about-main-section{
+        left: 4.5rem;
+        padding-right:2.5rem;
+    }
+}

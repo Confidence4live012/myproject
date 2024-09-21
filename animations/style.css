@@ -1,0 +1,25 @@
+.circle-one{
+    width: 200px;
+    height: 200px;
+    padding: 1rem;
+    background-color: crimson;
+    margin: auto;
+    border-radius: 50%;
+    animation: bounce 5s ease-in-out .3s infinite;
+}
+
+@keyframes bounce{
+    0%{
+        margin-top: 0;
+        opacity: 0;
+    }
+     50%{
+         margin-top: 10rem;
+         opacity:1;
+     }
+
+     100%{
+         margin-top:0;
+         opacity:1;
+     }
+}
